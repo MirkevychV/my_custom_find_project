@@ -11,19 +11,12 @@ def file_in_path_generator(directory_path):
             file_path = os.path.abspath(os.path.join(directory_path, file))
             if os.path.isfile(file_path):
                 yield file_path
-    else:
-        return
 
 
 def is_path_valid(directory_path):
     """
     Checks if the path is valid
     """
-    try:
-        if not os.path.isdir(directory_path):
-            raise FileNotFoundError
-        else:
-            return True
-    except FileNotFoundError:
-        print(f'Path "{directory_path}" is not valid')
-        exit()  # Close a program, because input-value is invalid
+    if not os.path.isdir(directory_path):
+        raise FileNotFoundError(directory_path)
+    return True

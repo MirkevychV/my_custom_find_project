@@ -1,0 +1,15 @@
+Coverage report: 84%
+
+Module	statements	missing	excluded	coverage
+Total	135	21	0	84%
+E:\Vadim files\my_custom_find\my_custom_find\__init__.py	 	0	0	0	100%
+E:\Vadim files\my_custom_find\my_custom_find\args_parser_settings.py	11	0	0	100%
+E:\Vadim files\my_custom_find\my_custom_find\file_in_path_generator.py	11	0	0	100%
+E:\Vadim files\my_custom_find\my_custom_find\find_duplicate_files.py	28	7	0	75%
+E:\Vadim files\my_custom_find\my_custom_find\find_large_files.py	23	0	0	100%
+E:\Vadim files\my_custom_find\my_custom_find\images_generator.py	6	0	0	100%
+E:\Vadim files\my_custom_find\my_custom_find\main.py			30	13	0	57%
+E:\Vadim files\my_custom_find\my_custom_find\old_file_generator.py	8	0	0	100%
+E:\Vadim files\my_custom_find\my_custom_find\output.py			18	1	0	94%
+
+coverage.py v5.5, created at 2021-09-25 22:42 +0300

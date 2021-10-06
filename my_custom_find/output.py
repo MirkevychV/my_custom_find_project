@@ -12,15 +12,11 @@ def output_to_console(command):
 
 
 def write_to_file(command, log_file):
-    try:
-        with open(log_file, 'w') as file:
-            file.write(work_info(command))
-            for text in command:
-                file.write(f'\n{text}')
-        return True
-    except IOError:
-        print(f'Could not write to file: {file}')
-        exit()
+    with open(log_file, 'w') as file:
+        file.write(work_info(command))
+        for text in command:
+            file.write(f'\n{text}')
+    return True
 
 
 def work_info(text_iter):

@@ -1,7 +1,7 @@
 import os
 import re
 
-from file_in_path_generator import file_in_path_generator
+from my_custom_find.file_in_path_generator import file_in_path_generator
 
 
 def large_files_generator(path, size):
@@ -26,10 +26,9 @@ def convert_size_to_bytes(user_size):
             return float(size[0]) * 1048576
         elif size[1] == 'G':
             return float(size[0]) * 1073741824
-        raise ValueError
-    except ValueError:
-        print('Invalid format of size')
-        exit()  # Close a program, because input-value is invalid
+        raise ValueError(user_size)
+    except IndexError:
+        raise ValueError(user_size)
 
 
 def size_split(user_size):

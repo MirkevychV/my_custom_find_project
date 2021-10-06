@@ -11,7 +11,6 @@ class MyParser(argparse.ArgumentParser):
     def error(self, message):
         print(f'Error: {message}')
         self.print_help()
-        exit()  # Close a program
 
 
 # Creating parser from MyParser(child class of argparse.ArgumentParser)
